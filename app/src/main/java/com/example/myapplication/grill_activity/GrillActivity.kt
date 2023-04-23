@@ -40,7 +40,6 @@ class GrillActivity : AppCompatActivity() {
         } else {
             ptCardNUmber.isEnabled = false
         }*/
-    //fffewfwefw
         btnPay.setOnClickListener {
             if(rbPayWithCard.isChecked || rbPayingWhenCome.isChecked) {
                 lblBillCart.setText("Vas racun")
