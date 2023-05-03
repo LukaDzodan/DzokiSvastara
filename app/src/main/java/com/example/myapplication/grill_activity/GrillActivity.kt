@@ -35,11 +35,13 @@ class GrillActivity : AppCompatActivity() {
 
         val lblBillCart = findViewById<TextView>(R.id.lblBillCart)
 
-        /*if (rbPayWithCard.isChecked) {
-            ptCardNUmber.isEnabled = true
-        } else {
-            ptCardNUmber.isEnabled = false
-        }*/
+        rbPayWithCard.setOnClickListener {
+            etCardNUmber.isEnabled = true
+        }
+        rbPayingWhenCome.setOnClickListener {
+            etCardNUmber.isEnabled = false
+        }
+
         btnPay.setOnClickListener {
             if(rbPayWithCard.isChecked || rbPayingWhenCome.isChecked) {
                 lblBillCart.setText("Vas racun")

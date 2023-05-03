@@ -220,6 +220,7 @@
         android:layout_width="174dp"
         android:layout_height="67dp"
         android:clickable="false"
+        android:enabled="false"
         android:ems="10"
         android:hint="Broj kartice()"
         android:inputType="textPersonName"
